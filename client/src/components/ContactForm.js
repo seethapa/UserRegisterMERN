@@ -23,7 +23,7 @@ const handleSubmit = async (e) => {
   setStatus('Submitting...');
 
   // Fallback in case backendUrl is undefined
-  const url = backendUrl ? `${backendUrl}/contact` : 'https://user-register-mern.vercel.app/api/contact';
+  const url = backendUrl ? `${backendUrl}/contact` : 'https://user-register-mern.vercel.app/api/contact' ;
 
   try {
     const response = await axios.post(url, formData);
