@@ -1,0 +1,217 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  color: #0a1f44;
+  background-color: #fff;
+}
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0a1f44;
+  color: #fff;
+  padding: 50px 50px 0px 50px;
+}
+
+.hero h1 {
+  font-size: 3.5em;
+}
+.trainer h1 {
+  font-size: 3.5em;
+}
+
+.cta {
+  background: #ff6600;
+  color: #fff;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 2em;
+  cursor: pointer;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.sub-text {
+  margin-top: 10px;
+  font-size: 1.9em;
+}
+
+.hero-img img {
+  max-width: 250px;
+  border-radius: 10px;
+}
+
+.trainer {
+  padding: 40px;
+  text-align: center;
+}
+
+.trainer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.trainer-content ul {
+  text-align: left;
+  list-style: none;
+  font-size: 2.5em;
+}
+
+.trainer-content img {
+  max-width: 400px;
+  border-radius: 10px;
+}
+/*.trainer-content li::before {
+  content: "✔";
+  font-size: 1.2rem;
+  color: orange;  👈 Change to orange
+  margin-right: 12px;
+}*/
+
+.why-attend {
+  padding: 40px;
+  background: #0a1f44;
+  color: #fff;
+  text-align: center;
+}
+.why-attend h1{
+ font-size: 2.5em;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.card {
+  background: #fff;
+  color: #0a1f44;
+  padding: 20px;
+  border-radius: 10px;
+  width: 25%;
+  font-weight: bold;
+  font-size: 2.0em;
+}
+
+.webinar {
+  padding: 40px;
+   font-size: 2.5em;
+}
+
+.webinar-content {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+
+}
+
+.details {
+  width: 50%;
+
+}
+
+.form {
+  background: #0a1f44;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 1.5em;
+}
+
+.form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form input {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.4em;
+}
+.form textarea {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  font-size: 0.4em;
+}
+
+
+
+.form button {
+  background: #ff6600;
+  color: #fff;
+  padding: 10px;
+   margin: 10px 0;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+   font-size: 0.4em;
+}
+
+.h3style {
+  font-size: 0.5em;
+  }
+
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #0a1f44;
+  color: #fff;
+   font-size: 1.5em;
+}
+
+footer button {
+  margin-top: 15px;
+}
+ .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 30px 0px 0px 30px;
+      /*gap: 20px;  space between columns */
+        background-color: #0a1f44;
+    }
+
+    .column {
+      flex: 1 1 auto; /* auto width, flexible */
+      min-width: 300px; /* ensures it shrinks nicely on mobile */
+      background-color:  #0a1f44;
+       padding: 30px 0px 0px 30px;
+       color: #fff;
+      /*border: 1px solid #ccc;*/
+    }
+    .column h1{
+     font-size: 3.5em;
+     }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column; /* stack vertically on smaller screens */
+      }
+    }
