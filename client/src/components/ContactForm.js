@@ -29,7 +29,7 @@ const handleSubmit = async (e) => {
     const response = await axios.post(url, formData);
 
     if (response.data?.success) {
-      setStatus('Contact saved successfully!');
+      setStatus('Thank You!');
       setFormData({
         fullName: '',
         email: '',
