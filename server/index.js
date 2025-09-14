@@ -7,7 +7,7 @@ const app = express();
 
 const database = require("./config/database");
 database.connect();
-const PORT = process.env.PORT || 4001;
+const PORT = process.env.PORT || 4002;
 
 app.listen(PORT, () => {
   console.log(`Server is listening to Port: ${PORT}`);
