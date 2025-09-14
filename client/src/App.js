@@ -69,7 +69,15 @@ function App() {
               </div>
             </div>
           </section>
+<footer>
+    <h2>Don't Miss Out — Secure Your Seat Today!</h2>
+    <br>
+    <div><p>© 2025 samuelasirvatham.com</p>
+        <p>Write Us: sammiee2000@gmail.com</p>
+    </div>
 
+    <!--    <button class="cta">Register Now</button>-->
+</footer>
         </div>
   );
 }
