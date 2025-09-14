@@ -73,6 +73,9 @@ const handleSubmit = async (e) => {
           placeholder="Phone Number"
           value={formData.phone}
           onChange={handleChange}
+          pattern="[0-9]*"
+          maxLength="10"
+          inputMode="numeric"
           required
         />
 

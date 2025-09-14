@@ -6,25 +6,20 @@ function App() {
   return (
 
      <div className="App">
-
           <div class="container">
             <div class="column">
               <h1>20+ Years Combined Experience.<br /> Learn From a 20-Year IT Veteran.</h1>
               <br /><br /><br /><br />
               <h1>AWS & DevOps Webinar</h1>
-
               <div class="cta">
                 <h2>Call or Whatsapp Me @
                 </h2>
                 <h2>+91 90435-70992 </h2>
               </div>
-
               <p class="sub-text">Limited seats available</p>
             </div>
             <div class="column">
               <img src="images/photo_img.png" alt="Trainer" />
-
-
             </div>
           </div>
 

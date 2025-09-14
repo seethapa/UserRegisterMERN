@@ -30,7 +30,7 @@ body {
   align-items: center;
   background-color: #0a1f44;
   color: #fff;
-  padding: 50px 50px 0px 50px;
+
 }
 
 .hero h1 {
@@ -84,6 +84,7 @@ body {
   max-width: 400px;
   border-radius: 10px;
 }
+
 /*.trainer-content li::before {
   content: "✔";
   font-size: 1.2rem;
@@ -193,9 +194,7 @@ footer button {
  .container {
       display: flex;
       flex-wrap: wrap;
-      padding: 30px 0px 0px 30px;
-      /*gap: 20px;  space between columns */
-        background-color: #0a1f44;
+
     }
 
     .column {
@@ -210,8 +209,118 @@ footer button {
      font-size: 3.5em;
      }
 
+      .column-trainer {
+           flex: 1 1 auto; /* auto width, flexible */
+           min-width: 300px; /* ensures it shrinks nicely on mobile */
+         }
+         .column-trainer h1{
+          font-size: 3.5em;
+          }
+
+
     @media (max-width: 768px) {
-      .container {
-        flex-direction: column; /* stack vertically on smaller screens */
-      }
-    }
+    .hero {
+                                   flex-direction: column;
+                                   padding: 30px 20px 0 20px;
+                                   text-align: center;
+                                 }
+
+                                 .hero h1,
+                                 .trainer h1,
+                                 .column h1,
+                                 .column-trainer h1 {
+                                   font-size: 2em;
+                                 }
+
+                                 .hero-img img {
+                                   max-width: 200px;
+                                   margin-top: 20px;
+                                 }
+
+                                 .sub-text {
+                                   font-size: 1.2em;
+                                 }
+
+                                 .cta {
+                                   font-size: 1.2em;
+                                   width: 100%;
+                                 }
+
+                                 .trainer {
+                                   padding: 20px;
+                                 }
+
+                                 .trainer-content {
+                                   flex-direction: column;
+                                   align-items: center;
+                                 }
+
+                                 .trainer-content ul {
+                                   font-size: 1.2em;
+                                   padding: 0;
+                                 }
+
+                                 .trainer-content img {
+                                   max-width: 90%;
+                                   margin-top: 20px;
+                                 }
+
+                                 .why-attend h1 {
+                                   font-size: 1.5em;
+                                 }
+
+                                 .cards {
+                                   flex-direction: column;
+                                   gap: 20px;
+                                   align-items: center;
+                                 }
+
+                                 .card {
+                                   width: 90%;
+                                   font-size: 1.2em;
+                                 }
+
+                                 .webinar {
+                                   padding: 20px;
+                                   font-size: 1.5em;
+                                 }
+
+                                 .webinar-content {
+                                   flex-direction: column;
+                                 }
+
+                                 .details {
+                                   width: 100%;
+                                   margin-bottom: 20px;
+                                 }
+
+                                 .form {
+                                   font-size: 1em;
+                                   width: 100%;
+                                 }
+
+                                 .form input,
+                                 .form textarea,
+                                 .form button {
+                                   font-size: 1em;
+                                 }
+
+                                 .h3style {
+                                   font-size: 1em;
+                                 }
+
+                                 footer {
+                                   font-size: 1em;
+                                   padding: 20px;
+                                 }
+
+                                 .container {
+                                   flex-direction: column;
+                                   padding: 0px;
+                                 }
+
+                                 .column,
+                                 .column-trainer {
+                                   padding: 20px 20px
+                                 }
+                               }
