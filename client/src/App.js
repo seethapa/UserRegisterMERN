@@ -75,8 +75,6 @@ function App() {
     <div><p>© 2025 samuelasirvatham.com</p>
         <p>Write Us: sammiee2000@gmail.com</p>
     </div>
-
-    <!--    <button class="cta">Register Now</button>-->
 </footer>
         </div>
   );
