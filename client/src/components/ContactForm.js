@@ -29,7 +29,7 @@ const handleSubmit = async (e) => {
     const response = await axios.post(url, formData);
 
     if (response.data?.success) {
-      setStatus('Thank You!');
+       setStatus('✅ Thank you! We will contact you soon.');
       setFormData({
         fullName: '',
         email: '',
@@ -37,11 +37,15 @@ const handleSubmit = async (e) => {
         message: ''
       });
     } else {
-      setStatus('Error saving contact.');
+      setStatus('❌ Error saving contact.');
     }
   } catch (error) {
     console.error('POST request failed:', error.message || error);
-    setStatus('Server error. Try again later.');
+    if (error.response?.data?.message) {
+       setStatus(`⚠️ ${error.response.data.message}`);
+     } else {
+       setStatus('⚠️ Server error. Try again later.');
+     }
   }
 };
 

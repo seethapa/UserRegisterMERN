@@ -142,7 +142,8 @@ body {
   border-radius: 10px;
   font-size: 1.5em;
 }
-
+.form p {  font-size: 0.8em; color: yellow;
+}
 .form form {
   display: flex;
   flex-direction: column;
