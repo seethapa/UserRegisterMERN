@@ -53,12 +53,12 @@ function App() {
               <div class="details">
                 <h3>Advanced AWS Cloud Strategies</h3>
                <br /><br />
-                <p>Friday, September 26, 2025 | 7:00 PM - 9:00 PM</p>
+                <p>Every Wednesday | 7:00 PM - 9:00 PM</p>
                <br /><br />
                 <div>
-                  <div>🔹 Modern cloud architecture</div>
-                  <div>🔹 Security best practices</div>
-                  <div>🔹 Cost optimization tips</div>
+                  <div>🔹 Modern Cloud Architecture</div>
+                  <div>🔹 Security Best Practices</div>
+                  <div>🔹 Cost Optimization Tips</div>
                 </div>
 
               </div>
