@@ -41,7 +41,7 @@ function App() {
           <section class="why-attend">
             <h1>Why Attend</h1>
             <div class="cards">
-              <div class="card">💡 Real-World Projects</div>
+              <div class="card">💡Real-World Projects</div>
               <div class="card">🛠 Hands-on AWS Labs</div>
               <div class="card">🚀 Career Growth Focus</div>
             </div>
@@ -62,18 +62,22 @@ function App() {
                 </div>
 
               </div>
-              <div class="form">
+             <div>
+<a href="https://wa.me/9043570992" target="_blank" class="whatsapp-link" >
+  💬 Chat on WhatsApp
+</a></div>
+              {/* <div class="form">
                 <h3>Register Now</h3>
  <ContactForm />
 
-              </div>
+              </div> */}
             </div>
           </section>
 <footer>
     <h2>Don't Miss Out — Secure Your Seat Today!</h2>
      <br />
     <div><p>© 2025 samuelasirvatham.com</p>
-        <p>Write Us: sammiee2000@gmail.com</p>
+         <p>Contact Us: +91 90435-70992</p>
     </div>
 </footer>
         </div>
