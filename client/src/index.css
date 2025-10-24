@@ -125,19 +125,42 @@ body {
 
 .webinar-content {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   margin-top: 20px;
 
 }
-.whatsapp-link
-{
-  background-color: #25D366;
-  color: white;
-  padding: 10px 20px;
+.call-link,
+.whatsapp-link {
+  display: inline-block;
+  width: 120%;               /* same width for both */
+  text-align: center;          /* center the text */
+  padding: 12px 0;             /* consistent vertical padding */
+  border-radius: 8px;
   text-decoration: none;
-  border-radius: 5px;
+  font-weight: 600;
   font-family: Arial, sans-serif;
+  color: white;
+  font-size: 1em;
+  margin: 8px 0;               /* spacing between buttons */
 }
+
+/* Individual colors */
+.whatsapp-link {
+  background-color: #25D366;
+}
+
+.whatsapp-link:hover {
+  background-color: #1ebc57;
+}
+
+.call-link {
+  background-color: #4CAF50;
+}
+
+.call-link:hover {
+  background-color: #45a049;
+}
+
 .details {
   width: 50%;
 
@@ -192,8 +215,8 @@ body {
 footer {
   text-align: center;
   padding: 30px;
-  background: #0a1f44;
-  color: #fff;
+  color: #0a1f44;
+  background-color: #fff;
    font-size: 1.5em;
 }
 
@@ -226,9 +249,108 @@ footer button {
           font-size: 3.5em;
           }
 
+.timeline-panel {
+  padding: 40px;
+  background: #0a1f44;
+  color: #fff;
+}
+    .timeline-panel h2 {
+      text-align: center;
+      color: #fff;
+      margin-bottom: 50px;
+    }
 
-    @media (max-width: 768px) {
-    .hero {
+    .timeline {
+      position: relative;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    /* Center Line */
+    .timeline::after {
+      content: '';
+      position: absolute;
+      width: 4px;
+      background-color: #9c27b0; /* Purple line */
+      top: 0;
+      bottom: 0;
+      left: 50%;
+      margin-left: -2px;
+    }
+
+    /* Timeline container */
+    .timeline-item {
+      padding: 15px 30px;
+      position: relative;
+      width: 50%;
+    }
+
+    /* Common bubble style */
+    .timeline-item::before {
+      content: '';
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: #fff;
+      border: 4px solid #9c27b0;
+      top: 15px;
+      border-radius: 50%;
+      z-index: 1;
+    }
+
+    /* Left items */
+    .timeline-item.left {
+      left: 0;
+      text-align: right;
+    }
+
+    .timeline-item.left::before {
+      right: -10px;
+    }
+
+    /* Right items */
+    .timeline-item.right {
+      left: 50%;
+    }
+
+    .timeline-item.right::before {
+      left: -10px;
+    }
+
+    /* Content box */
+    .timeline-content {
+      background-color: #fff;
+      padding: 15px 25px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      position: relative;
+      transition: 0.3s;
+    }
+
+    .timeline-content:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+    }
+
+    .timeline-date {
+      font-size: 0.9em;
+      color: #666;
+    }
+
+    .timeline-title {
+      color: #4a148c;
+      font-weight: 600;
+      font-size: 1.1em;
+      margin-top: 5px;
+    }
+
+    .timeline-role {
+      color: #444;
+      font-size: 0.95em;
+    }
+  
+                                @media (max-width: 768px) {
+                                .hero {
                                    flex-direction: column;
                                    padding: 30px 20px 0 20px;
                                    text-align: center;
@@ -297,15 +419,16 @@ footer button {
                                  .webinar-content {
                                    flex-direction: column;
                                  }
-                                  .whatsapp-link
-                                {
-                                  background-color: #25D366;
-                                  color: white;
-                                  padding: 10px 20px;
-                                  text-decoration: none;
-                                  border-radius: 5px;
-                                  font-family: Arial, sans-serif;
-                                }
+                                 .whatsapp-link
+                                  {
+                                    background-color: #25D366;
+                                    color: white;
+                                    padding: 10px 20px;
+                                    text-decoration: none;
+                                    border-radius: 5px;
+                                    font-family: Arial, sans-serif;
+                                  }
+
                                  .details {
                                    width: 100%;
                                    margin-bottom: 20px;
@@ -340,4 +463,38 @@ footer button {
                                  .column-trainer {
                                    padding: 20px 20px
                                  }
-                               }
+                                  .timeline::after {
+                                  left: 30px;
+                                }
+
+                                .timeline-item {
+                                  width: 100%;
+                                  padding-left: 60px;
+                                  padding-right: 25px;
+                                }
+
+                                .timeline-item.left, .timeline-item.right {
+                                  text-align: left;
+                                }
+
+                                .timeline-item::before {
+                                  left: 20px;
+                                }
+                                /* Right items */
+                                .timeline-item.right {
+                                  left: 10%;
+                                }
+
+                                .timeline-item.right::before {
+                                  left: 20px;
+                                }
+                                 .timeline-item.right {
+                                  left: 0%;
+                                }
+                                .call-link,
+                                .whatsapp-link {
+                                  width: 100%;
+                                  font-size: 1.1em;
+                                }
+    }
+                             
