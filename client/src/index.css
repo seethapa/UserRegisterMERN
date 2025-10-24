@@ -129,7 +129,15 @@ body {
   margin-top: 20px;
 
 }
-
+.whatsapp-link
+{
+  background-color: #25D366;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+}
 .details {
   width: 50%;
 
@@ -289,7 +297,15 @@ footer button {
                                  .webinar-content {
                                    flex-direction: column;
                                  }
-
+                                  .whatsapp-link
+                                {
+                                  background-color: #25D366;
+                                  color: white;
+                                  padding: 10px 20px;
+                                  text-decoration: none;
+                                  border-radius: 5px;
+                                  font-family: Arial, sans-serif;
+                                }
                                  .details {
                                    width: 100%;
                                    margin-bottom: 20px;
